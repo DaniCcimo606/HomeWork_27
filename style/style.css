@@ -1,0 +1,101 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-400");
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+body .wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+body .wrapper span {
+  display: inline-block;
+}
+body .wrapper .satisfactory, body .wrapper .good, body .wrapper .very-good, body .wrapper .excellent {
+  margin-left: 5px;
+  padding: 3px 5px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+body .wrapper .satisfactory {
+  color: #F34337;
+  background-color: #EED8EB;
+}
+body .wrapper .good {
+  color: #7A54C1;
+  background-color: #DED7F7;
+}
+body .wrapper .very-good {
+  color: #06BDD5;
+  background-color: #DAE3F9;
+}
+body .wrapper .excellent {
+  color: #5CB45F;
+  background-color: #DCE3ED;
+}
+body .wrapper .questionnaire {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: #F8F8F8;
+}
+body .wrapper .questionnaire .info, body .wrapper .questionnaire .status, body .wrapper .questionnaire .grade {
+  flex: 1 0 50%;
+}
+body .wrapper .questionnaire .info {
+  display: flex;
+}
+body .wrapper .questionnaire .info img {
+  height: 50px;
+}
+body .wrapper .questionnaire .info .info__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 10px;
+}
+body .wrapper .questionnaire .info .info__description span span {
+  font-weight: 700;
+}
+body .wrapper .questionnaire .status {
+  display: flex;
+  flex-direction: row-reverse;
+}
+body .wrapper .questionnaire .status .status-wrap {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #EBE9FF;
+}
+body .wrapper .questionnaire .status .status-wrap img {
+  height: 25px;
+}
+body .wrapper .questionnaire .status .status-wrap span {
+  margin-left: 5px;
+  font-weight: 700;
+}
+body .wrapper .questionnaire .grade {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+body .wrapper .questionnaire .grade .grade__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px;
+  border-radius: 5px;
+}
+body .wrapper .questionnaire .grade .grade__description span span {
+  font-weight: 700;
+}
+body .wrapper .student .grade .grade__description {
+  background-color: #EBE9FF;
+}
+body .wrapper .admin .grade .grade__description {
+  background-color: #E9F2FF;
+}
+body .wrapper .lector .grade .grade__description {
+  background-color: #FFE9E9;
+}/*# sourceMappingURL=style.css.map */

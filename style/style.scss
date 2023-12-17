@@ -1,0 +1,118 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-400');
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    .wrapper {
+        width: 50%;
+        margin: 0 auto;
+        span {
+            display: inline-block;
+        }
+        .satisfactory, .good, .very-good, .excellent {
+            margin-left: 5px;
+            padding: 3px 5px;
+            font-weight: 700;
+            border-radius: 5px;
+        }
+        .satisfactory {
+            color: #F34337;
+            background-color: #EED8EB;
+        }
+        .good {
+            color: #7A54C1;
+            background-color: #DED7F7;
+        }
+        .very-good {
+            color: #06BDD5;
+            background-color: #DAE3F9;
+        }
+        .excellent {
+            color: #5CB45F;
+            background-color: #DCE3ED;
+        }
+        .questionnaire {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+            padding: 15px 20px;
+            border-radius: 5px;
+            background-color: #F8F8F8;
+            .info, .status, .grade {
+                flex: 1 0 50%;
+            }
+            .info {
+                display: flex;
+                img {
+                    height: 50px;
+                }
+                .info__description {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    margin-left: 10px;
+                    span {
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            .status {
+                display: flex;
+                flex-direction: row-reverse;
+                .status-wrap {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 10px;
+                    border-radius: 5px;
+                    background-color: #EBE9FF;
+                    img {
+                        height: 25px;
+                    }
+                    span {
+                        margin-left: 5px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .grade {
+                display: flex;
+                gap: 10px;
+                margin-top: 10px;
+                .grade__description {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding: 5px;
+                    border-radius: 5px;
+                    span {
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+        .student {
+            .grade {
+                .grade__description {
+                    background-color: #EBE9FF;
+                }
+            }
+        }
+        .admin {
+            .grade {
+                .grade__description {
+                    background-color: #E9F2FF;
+                }
+            }
+        }
+        .lector {
+            .grade {
+                .grade__description {
+                    background-color: #FFE9E9;
+                }
+            }
+        }
+    }
+}
